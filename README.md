@@ -5,11 +5,10 @@
 ## 📋 Зміст
 
 - [Огляд](#-огляд)
-- [Етап 1: Фундаментальні Знання NLP та Deep Learning](#-етап-1-фундаментальні-знання-nlp-та-deep-learning-2-3-місяці)
-- [Етап 2: Занурення в LLMs та Екосистему](#-етап-2-занурення-в-llms-та-екосистему-3-4-місяці)
-- [Етап 3: MLOps та Production-Ready LLMs](#-етап-3-mlops-та-production-ready-llms-2-3-місяці)
-- [Ключові Технічні Знання](#-ключові-технічні-знання)
-- [Додаткові Ресурси](#-додаткові-ресурси)
+- [🚀 12-місячний Трансформаційний Roadmap](#-12-місячний-трансформаційний-roadmap)
+- [📋 Детальний Розклад по Етапах](#-детальний-розклад-по-етапах)
+- [🎯 Ключові Технічні Знання](#-ключові-технічні-знання)
+- [📚 Додаткові Ресурси](#-додаткові-ресурси)
 
 ## 🎯 Огляд
 
@@ -25,110 +24,225 @@
 
 ---
 
-## 📚 Етап 1: Фундаментальні Знання NLP та Deep Learning (2-3 місяці)
+## 🚀 12-місячний Трансформаційний Roadmap
 
-> **Цей етап є найважливішим для закладення основ, на яких ґрунтуються LLMs.**
+> **Повний шлях трансформації**: Senior Python Developer → Data Analyst → ML Engineer → LLM Engineer → Senior LLM Engineer (розробка власних архітектур)
 
-### 📖 Що вивчати
+### 🗓️ **Місяці 1-2: Data Analyst Foundation**
 
-| Тема | Опис |
-|------|------|
-| **Основи NLP** | • Токенізація (WordPiece, BPE, SentencePiece)<br>• Векторні представлення слів (Word2Vec, GloVe)<br>• Текстові завдання: класифікація, NER, машиний переклад |
-| **Deep Learning для NLP** | • RNNs, LSTMs, GRUs (розуміння архітектури та обмежень)<br>• PyTorch або TensorFlow (досконале володіння) |
-| **Архітектура Transformer** | • Механізм уваги (Attention та Self-Attention)<br>• Позиційне кодування (Positional Encoding)<br>• Структура Encoder-Decoder |
+#### 🎯 **Мета**: Навчитися працювати з даними, SQL, BI, Python
 
-### 🛠️ Практичні проєкти
+#### 📚 **Теорія**:
+- **SQL**: SELECT, JOIN, GROUP BY, CTE, window functions
+- **Python**: pandas, numpy, matplotlib, seaborn
+- **Статистика**: середнє, медіана, кореляції, дисперсія
+- **Візуалізація**: Power BI / Tableau
 
-| Проєкт | Опис | Результат |
-|--------|------|-----------|
-| **Проєкт 1: Класифікатор Тексту** | Створити класифікатор емоцій (Sentiment Analysis) або спаму, використовуючи класичні методи (TF-IDF + Scikit-learn) та прості нейронні мережі | Робочий класифікатор з метриками оцінки |
-| **Проєкт 2: Simple Sequence Model** | Імплементувати просту модель (на основі RNN/LSTM) для генерації тексту або машинного перекладу на невеликому датасеті | Базова модель генерації тексту |
-| **Проєкт 3: Імплементація Transformer** | Спробувати імплементувати базовий блок Transformer з нуля на PyTorch/TensorFlow для глибокого розуміння | Власна реалізація Transformer |
+#### 🛠️ **Проєкти для портфоліо**:
+- **Sales Dashboard** (Power BI) — аналітика продажів
+- **Data Cleaning & EDA Notebook** (Python)
+- **SQL Case Study** (Marketing / E-commerce)
 
-### 📚 Ресурси для навчання
+#### 🔧 **Інструменти**:
+PostgreSQL, Python, pandas, Power BI
 
-#### Курси:
-1. **Stanford's CS224N** (відео на YouTube/матеріали)
-2. **DeepLearning.AI NLP Specialization** (Coursera)
-3. **Deep Learning Specialization** (Andrew Ng, Coursera)
+#### 📖 **Ресурси**:
+- "Python for Data Analysis" — Wes McKinney
+- "Storytelling with Data" — Cole Knaflic
+- [SQLBolt](https://sqlbolt.com/)
 
-#### Книги та документація:
-- **Speech and Language Processing** (Jurafsky & Martin) — для теорії
-- **NLTK та SpaCy документація**
-- **Офіційні туторіали PyTorch або TensorFlow/Keras**
-
-#### Статті:
-- **Paper "Attention Is All You Need"**
-- **Блог-пост "The Illustrated Transformer"** (Jay Alammar)
+#### ✅ **Чек-поінт**: Можете створювати дашборди та проводити EDA
 
 ---
 
-## 🔬 Етап 2: Занурення в LLMs та Екосистему (3-4 місяці)
+### 🗓️ **Місяці 3-4: ML Engineer Foundation**
 
-> **Фокус на інструментах, які використовує LLM Engineer.**
+#### 🎯 **Мета**: Освоїти машинне навчання та MLOps основи
 
-### 📖 Що вивчати
+#### 📚 **Теорія**:
+- **ML Алгоритми**: Linear/Logistic Regression, Random Forest, XGBoost
+- **MLOps**: Docker, CI/CD, model versioning
+- **Feature Engineering**: encoding, scaling, selection
+- **Model Evaluation**: cross-validation, metrics
 
-| Тема | Опис |
-|------|------|
-| **Введення в LLMs** | • Основні моделі (BERT, GPT, Llama, Mistral)<br>• Zero-shot, Few-shot learning, In-Context Learning<br>• Prompt Engineering (базовий та просунутий) |
-| **Hugging Face Ecosystem** | • Бібліотеки transformers, datasets, accelerate<br>• Робота з Hugging Face Hub (завантаження/вивантаження моделей) |
-| **Retrieval-Augmented Generation (RAG)** | • Архітектура RAG, Chunking, Embeddings, Search<br>• Векторні Бази Даних (Vector Databases: Pinecone, Weaviate, Milvus)<br>• Фреймворки оркестрації (LangChain, LlamaIndex) |
+#### 🛠️ **Проєкти для портфоліо**:
+- **End-to-End ML Pipeline** (Scikit-learn + MLflow)
+- **MLOps Pipeline** (Docker + GitHub Actions)
+- **Feature Store Implementation**
 
-### 🛠️ Практичні проєкти
+#### 🔧 **Інструменти**:
+Scikit-learn, MLflow, Docker, GitHub Actions
 
-| Проєкт | Опис | Результат |
-|--------|------|-----------|
-| **Проєкт 4: Prompt Engineering та Оцінка** | Розробити складні промпти (наприклад, CoT - Chain-of-Thought) для вирішення кількох завдань (Summarization, Q&A) та порівняти результати | Набір оптимізованих промптів з метриками |
-| **Проєкт 5: Fine-Tuning/PEFT** | Взяти невелику попередньо навчену модель і провести Fine-Tuning або LoRA/QLoRA для конкретного завдання (наприклад, адаптувати модель до української юридичної термінології) | Адаптована модель для специфічного домену |
-| **Проєкт 6: Система RAG** | Побудувати RAG-систему на власних документах (наприклад, FAQ, корпоративна документація), використовуючи LangChain/LlamaIndex та Vector DB | **Must-have проєкт** - повноцінна RAG система |
+#### 📖 **Ресурси**:
+- "Hands-On Machine Learning" — Aurélien Géron
+- "Designing Machine Learning Systems" — Chip Huyen
+- [MLOps Course](https://mlops.community/)
 
-### 📚 Ресурси для навчання
-
-#### Курси:
-- **Hugging Face NLP Course** (практичний)
-- **DeepLearning.AI курси по Prompt Engineering та LLMs**
-
-#### Документація:
-- **LangChain Documentation** (для оркестрації)
-- **Hugging Face Fine-Tuning examples**
-- **Документація бібліотек PEFT** (Parameter-Efficient Fine-Tuning)
-- **Офіційні туторіали LangChain / LlamaIndex**
-- **Туторіали по Pinecone / Weaviate**
+#### ✅ **Чек-поінт**: Можете розгортати ML моделі в production
 
 ---
 
-## 🚀 Етап 3: MLOps та Production-Ready LLMs (2-3 місяці)
+### 🗓️ **Місяці 5-6: Deep Learning & NLP**
 
-> **Оскільки ви Senior Developer, цей етап має бути пріоритетним, оскільки він максимально наближений до інженерних задач**
+#### 🎯 **Мета**: Зануритися в нейронні мережі та NLP
 
-### 📖 Що вивчати
+#### 📚 **Теорія**:
+- **Deep Learning**: Neural Networks, Backpropagation, Optimization
+- **NLP**: Tokenization, Word Embeddings, RNNs, LSTMs
+- **PyTorch/TensorFlow**: Framework mastery
+- **Computer Vision**: CNNs, Transfer Learning
 
-| Тема | Опис |
-|------|------|
-| **LLMOps та Деплоймент** | • Контейнеризація (Docker)<br>• Хмарні платформи (AWS SageMaker, Google Vertex AI, Azure ML)<br>• Розгортання LLM як API (FastAPI/Flask) |
-| **Оцінка (Evaluation) та Метрики** | • Метрики для генерації тексту (BLEU, ROUGE)<br>• LLM-специфічні метрики (Perplexity, Human Evaluation)<br>• Оцінка RAG-систем (TruLens, Ragas) |
-| **Оптимізація Inference** | • Квантизація (Quantization) (напр., bitsandbytes)<br>• Розуміння GPU-пам'яті та Latency<br>• Frameworks для прискорення (vLLM, TensorRT-LLM) |
+#### 🛠️ **Проєкти для портфоліо**:
+- **Sentiment Analysis Model** (RNN/LSTM)
+- **Image Classification** (CNN + Transfer Learning)
+- **Text Generation Model** (Character-level RNN)
 
-### 🛠️ Практичні проєкти
+#### 🔧 **Інструменти**:
+PyTorch, TensorFlow, Hugging Face Transformers
 
-| Проєкт | Опис | Результат |
-|--------|------|-----------|
-| **Проєкт 7: Деплоймент LLM як Service** | Розгорнути модель з Проєкту 5 або 6 як REST API (FastAPI) у Docker-контейнері. Опціонально – деплоймент на Cloud Service | Production-ready API сервіс |
-| **Проєкт 8: Тестування та Оцінка RAG** | Додати до Проєкту 6 автоматичну та ручну оцінку якості відповідей RAG-системи | Система моніторингу якості |
-| **Проєкт 9: Оптимізація** | Оптимізувати модель з Проєкту 7 для прискорення інференсу, використовуючи квантизацію або один із фреймворків | Оптимізована модель з покращеними метриками |
+#### 📖 **Ресурси**:
+- "Deep Learning" — Goodfellow, Bengio, Courville
+- "Natural Language Processing with Python" — Bird, Klein & Loper
+- [Fast.ai Course](https://course.fast.ai/)
 
-### 📚 Ресурси для навчання
+#### ✅ **Чек-поінт**: Розумієте архітектуру нейронних мереж
 
-#### Документація:
-- **FastAPI та Docker туторіали**
-- **MLOps-частина Hugging Face / Cloud Provider**
-- **Курс LLMOps від DeepLearning.AI**
+---
 
-#### Бібліотеки:
-- **Документація бібліотек Ragas або TruLens**
-- **vLLM та bitsandbytes**
-- **Статті про LLM Evaluation та оптимізацію LLM Inference**
+### 🗓️ **Місяці 7-8: Transformer Architecture & LLMs**
+
+#### 🎯 **Мета**: Освоїти Transformer архітектуру та основи LLMs
+
+#### 📚 **Теорія**:
+- **Transformer**: Attention, Self-Attention, Multi-Head Attention
+- **LLM Concepts**: Pre-training, Fine-tuning, PEFT
+- **Prompt Engineering**: Zero-shot, Few-shot, Chain-of-Thought
+- **Model Architectures**: BERT, GPT, T5
+
+#### 🛠️ **Проєкти для портфоліо**:
+- **Transformer Implementation** (from scratch)
+- **Fine-tuning BERT/GPT** for specific task
+- **Prompt Engineering Playground**
+
+#### 🔧 **Інструменти**:
+Hugging Face, LangChain, OpenAI API
+
+#### 📖 **Ресурси**:
+- "Attention Is All You Need" paper
+- "The Illustrated Transformer" — Jay Alammar
+- [Hugging Face Course](https://huggingface.co/course)
+
+#### ✅ **Чек-поінт**: Можете fine-tune та використовувати LLMs
+
+---
+
+### 🗓️ **Місяці 9-10: RAG & Advanced LLM Applications**
+
+#### 🎯 **Мета**: Побудувати складні LLM додатки
+
+#### 📚 **Теорія**:
+- **RAG Architecture**: Retrieval, Augmentation, Generation
+- **Vector Databases**: Embeddings, Similarity Search
+- **LLM Orchestration**: LangChain, LlamaIndex
+- **Evaluation**: LLM-specific metrics
+
+#### 🛠️ **Проєкти для портфоліо**:
+- **Production RAG System** (LangChain + Vector DB)
+- **Multi-Agent LLM System**
+- **LLM Evaluation Framework**
+
+#### 🔧 **Інструменти**:
+LangChain, LlamaIndex, Pinecone, Weaviate
+
+#### 📖 **Ресурси**:
+- "Retrieval-Augmented Generation" papers
+- [LangChain Documentation](https://python.langchain.com/)
+- [LlamaIndex Documentation](https://www.llamaindex.ai/)
+
+#### ✅ **Чек-поінт**: Можете створювати production LLM додатки
+
+---
+
+### 🗓️ **Місяці 11-12: Senior LLM Engineer & Custom Architectures**
+
+#### 🎯 **Мета**: Стати Senior LLM Engineer з можливістю розробки власних архітектур
+
+#### 📚 **Теорія**:
+- **Advanced Architectures**: Mamba, RetNet, Mixture of Experts
+- **Model Optimization**: Quantization, Pruning, Distillation
+- **Large-Scale Training**: Distributed training, Model parallelism
+- **Research & Innovation**: Staying current with latest developments
+
+#### 🛠️ **Проєкти для портфоліо**:
+- **Custom Architecture Implementation** (Mamba/RetNet)
+- **Large-Scale Model Training Pipeline**
+- **Research Project** (novel approach or improvement)
+
+#### 🔧 **Інструменти**:
+DeepSpeed, FairScale, vLLM, Custom CUDA kernels
+
+#### 📖 **Ресурси**:
+- Latest research papers (arXiv, conferences)
+- "Large Language Models" — Jason Wei
+- [Papers with Code](https://paperswithcode.com/)
+
+#### ✅ **Чек-поінт**: Можете розробляти та оптимізувати власні архітектури
+
+---
+
+### 🎯 **Підсумкові цілі після 12 місяців**:
+
+- ✅ **Data Analysis**: Повне розуміння роботи з даними
+- ✅ **ML Engineering**: Production-ready ML pipelines
+- ✅ **Deep Learning**: Архітектура нейронних мереж
+- ✅ **LLM Engineering**: Розробка LLM додатків
+- ✅ **Senior Level**: Розробка власних архітектур моделей
+
+### 📊 **Метрики прогресу**:
+- **Портфоліо**: 12+ проєктів різної складності
+- **GitHub**: Активний репозиторій з кодом
+- **Знания**: Глибоке розуміння всіх етапів
+- **Готовність**: До Senior LLM Engineer позицій
+
+---
+
+## 📋 Детальний Розклад по Етапах
+
+> **Додаткові деталі для кожного етапу 12-місячного roadmap**
+
+### 🔍 **Детальний розклад місяців 5-6: Deep Learning & NLP**
+
+#### Додаткові теми для глибшого вивчення:
+- **Токенізація**: WordPiece, BPE, SentencePiece
+- **Векторні представлення**: Word2Vec, GloVe, FastText
+- **Текстові завдання**: класифікація, NER, машиний переклад
+- **Архітектурні обмеження**: Vanishing gradients, Long-term dependencies
+
+#### Додаткові проєкти:
+- **Класифікатор емоцій** (TF-IDF + Scikit-learn + Neural Networks)
+- **Машинний переклад** (RNN/LSTM на невеликому датасеті)
+
+### 🔍 **Детальний розклад місяців 7-8: Transformer Architecture & LLMs**
+
+#### Додаткові теми:
+- **Позиційне кодування**: Різні підходи та їх вплив
+- **Архітектурні варіанти**: BERT (Encoder-only) vs GPT (Decoder-only)
+- **In-Context Learning**: Механізми та обмеження
+
+#### Додаткові проєкти:
+- **Prompt Engineering Playground** з різними стратегіями
+- **Порівняння моделей** (BERT vs GPT для конкретних завдань)
+
+### 🔍 **Детальний розклад місяців 9-10: RAG & Advanced Applications**
+
+#### Додаткові теми:
+- **Chunking стратегії**: Різні підходи до розбиття тексту
+- **Metadata та Indexing**: Оптимізація пошуку
+- **Multi-Agent Systems**: Координація між агентами
+
+#### Додаткові проєкти:
+- **Multi-Agent LLM System** з різними ролями агентів
+- **LLM Evaluation Framework** з автоматичними метриками
 
 ---
 
@@ -185,16 +299,21 @@
 - [LangChain Documentation](https://python.langchain.com/) - фреймворк для LLM додатків
 - [LlamaIndex](https://www.llamaindex.ai/) - фреймворк для RAG систем
 - [Papers with Code](https://paperswithcode.com/) - останні дослідження з кодом
+- [SQLBolt](https://sqlbolt.com/) - інтерактивний SQL туторіал
+- [Fast.ai Course](https://course.fast.ai/) - практичний курс deep learning
 
-### 📖 Рекомендовані книги
-- "Speech and Language Processing" - Jurafsky & Martin
-- "Natural Language Processing with Python" - Bird, Klein & Loper
-- "Deep Learning" - Goodfellow, Bengio & Courville
+### 📖 Рекомендовані книги (за етапами)
+- **Data Analysis**: "Python for Data Analysis" — Wes McKinney, "Storytelling with Data" — Cole Knaflic
+- **ML Engineering**: "Hands-On Machine Learning" — Aurélien Géron, "Designing Machine Learning Systems" — Chip Huyen
+- **Deep Learning**: "Deep Learning" — Goodfellow, Bengio & Courville
+- **NLP**: "Speech and Language Processing" — Jurafsky & Martin, "Natural Language Processing with Python" — Bird, Klein & Loper
+- **LLMs**: "Large Language Models" — Jason Wei
 
 ### 🎓 Онлайн курси
 - [CS224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
 - [DeepLearning.AI Specializations](https://www.deeplearning.ai/)
 - [Hugging Face Course](https://huggingface.co/course)
+- [MLOps Course](https://mlops.community/)
 
 ---
 
